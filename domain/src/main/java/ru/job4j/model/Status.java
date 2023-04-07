@@ -4,12 +4,13 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-@Table(name = "dishes")
-public class Dish {
+@Table(name = "status")
+public class Status {
 
     @Id
     @EqualsAndHashCode.Include
@@ -18,9 +19,6 @@ public class Dish {
 
     private String name;
 
-    private double price;
-
-    @ManyToOne
-    @JoinColumn(name = "order_id", referencedColumnName = "id")
-    private Order order;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "status")
+    private List<Order> orders;
 }
