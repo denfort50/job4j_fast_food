@@ -5,14 +5,13 @@ import ru.job4j.model.Dish;
 import java.util.List;
 import java.util.Optional;
 
-
 public interface DishService {
 
     void save(Dish dish);
 
     Dish update(Dish dish);
 
-    boolean delete(int id);
+    void delete(int id);
 
     List<Dish> findAll();
 

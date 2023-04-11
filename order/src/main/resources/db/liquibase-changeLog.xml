@@ -17,5 +17,10 @@
     <include file="scripts/006_ddl_create_dishes_table.sql" relativeToChangelogFile="true"/>
     <include file="scripts/007_ddl_create_notifications_table.sql" relativeToChangelogFile="true"/>
     <include file="scripts/008_dml_insert_status.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/009_dml_insert_customers.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/010_dml_insert_cards.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/011_dml_insert_products.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/012_dml_insert_orders.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/013_dml_insert_dishes.sql" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>
